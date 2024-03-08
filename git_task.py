@@ -2,4 +2,10 @@
 
 user_name = input("Please enter your name: ")
 print(f"Hello {user_name}!")
-user_input = input("Are you all good today?")
+user_input = input("Are you all good today? Y/N: ")
+if user_input.upper() == "Y":
+  print("I'm glad to hear that!")
+elif user_input.upper() == "N":
+  print("Sorry to hear that, hope it gets better.")
+else:
+  print("What did you say?")
